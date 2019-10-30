@@ -10,20 +10,23 @@
 </head>
 <body>
     <div class="container">
-        <h1>Animal Search</h1>
+        <h1>Movie Search</h1>
             
-                <!-- This form will be where users input data about the movies -->
-        <form id="animal-form">
-        <label for="animal-input">Search for an animal</label>
-        <input type="text" id="animal-input"><br>
+        <!-- Rendered Buttons will get Dumped Here  -->
+        <div id="buttons-view"></div>
             
-                  <!-- This button will trigger our AJAX call -->
-        <input id="find-animal" type="submit" value="Animal Search">
+        <form id="movie-form">
+            <label for="movie-input">Add a Movie, Yo!</label>
+            <input type="text" id="movie-input">
+            <br>
+            
+            <!-- Button triggers new movie to be added -->
+            <input id="add-movie" type="submit" value="Add a Movie, Yo!">
         </form>
             
-                <!-- We'll be dumping our JSON contents in here -->
-    <div id="gifs-appear-here"></div>  
-
+        <!-- Movies will Get Dumped Here -->
+        <div id="movies-view"></div>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>
